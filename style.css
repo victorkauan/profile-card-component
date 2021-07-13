@@ -1,0 +1,162 @@
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Variables === */
+:root {
+  --white: #fff;
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+}
+
+/* === Global === */
+body {
+  color: var(--dark-blue);
+  font: 700 1.125rem 'Kumbh Sans', sans-serif;
+
+  background: var(--dark-cyan);
+}
+
+/* === Container === */
+#container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 3rem;
+}
+
+/* === Circles === */
+.circle {
+  position: fixed;
+  z-index: -1;
+}
+
+#top-circle {
+  top: -75%;
+  left: -20%;
+}
+
+#bottom-circle {
+  bottom: -90%;
+  right: -20%;
+}
+
+/* === Header === */
+#header img {
+  display: block;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* === Card === */
+#card {
+  text-align: center;
+
+  background: var(--white);
+
+  max-width: 350px;
+
+  box-shadow: 0 0.25rem 6rem rgba(0, 0, 0, 0.25);
+
+  border-radius: 1rem;
+}
+
+/* === Image === */
+#image {
+  height: calc(48px + 5px);
+}
+
+#image img {
+  background: var(--white);
+
+  border: 5px solid var(--white);
+  border-radius: 50%;
+
+  margin-top: calc((48px + 5px) * -1);
+}
+
+/* === Personal Info === */
+#personal-info {
+  padding: 1.5rem 0;
+}
+
+#personal-info #age {
+  color: var(--gray-blue);
+  font-weight: 400;
+}
+
+#personal-info #city {
+  color: var(--gray-blue);
+  font-weight: 400;
+  font-size: 0.875rem;
+
+  margin-top: 0.75rem;
+}
+
+/* === Social Media === */
+#social-media {
+  padding: 1.5rem 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#social-media .name {
+  color: var(--gray-blue);
+  font-weight: 400;
+  font-size: 0.75rem;
+
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  /* === Circles === */
+  #top-circle {
+    top: -85%;
+    left: -200%;
+  }
+
+  #bottom-circle {
+    bottom: -85%;
+    right: -200%;
+  }
+
+  /* === Header === */
+  #header img {
+    width: 325px;
+    height: auto;
+  }
+
+  /* === Card === */
+  #card {
+    max-width: 325px;
+  }
+}
+
+/* 
+=== Attribution ===
+.attribution {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+*/

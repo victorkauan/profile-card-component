@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt="Circle in the upper left corner of the background"
+        id="top-circle"
+        class="circle"
+      />
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt="Circle in the bottom left corner of the background"
+        id="bottom-circle"
+        class="circle"
+      />
+      <div id="card">
+        <header id="header">
+          <img src="./images/bg-pattern-card.svg" alt="Top of the card" />
+        </header>
+
+        <div id="image">
+          <img src="./images/image-victor.jpg" alt="Victor's photo" />
+        </div>
+
+        <div id="personal-info">
+          Victor Crest &nbsp;<span id="age">26</span>
+
+          <div id="city">London</div>
+        </div>
+
+        <div id="social-media">
+          <div class="number">
+            80K
+            <div class="name">Followers</div>
+          </div>
+
+          <div class="number">
+            803K
+            <div class="name">Likes</div>
+          </div>
+
+          <div class="number">
+            1.4K
+            <div class="name">Photos</div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/victorkauan">Victor Kauan</a>.
+        </div>
+      -->
+    </div>
+  </body>
+</html>
